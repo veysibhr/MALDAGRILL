@@ -1,0 +1,772 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+header {
+    background-color: #79160a;
+    padding: 1px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed; /* Fixe le header en haut de la fenêtre */
+    top: 0; /* Positionne le header en haut de la fenêtre */
+    left: 0; /* Positionne le header à gauche de la fenêtre */
+    width: 100%; /* Étire le header sur toute la largeur de la fenêtre */
+    z-index: 1000;
+}
+.logo img {
+    height: 110px;
+    transition: transform 0.3s;
+}
+
+.logo img:hover {
+    transform: scale(1.2);
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    margin-right: 50px;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px; /* Ajoute de l'espace entre chaque élément de la liste */
+}
+
+nav ul li:last-child {
+    margin-right: 0;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s;
+    margin: 10px;
+    text-shadow: 1px 1px 4px rgba(0,0,0,0.7);
+}
+
+nav ul li a:hover {
+    color: #b9230f;
+}
+
+.reserve-btn {
+    padding: 8px 20px;
+    border: 2px solid #000;
+    border-radius: 0px;
+    transition: background-color 0.3s;
+    margin-left: 60px; /* Ajoute de l'espace à gauche du bouton */
+    margin-right: -650px;
+    text-decoration: none;
+    color: #fff;
+    margin-bottom: -2px;
+    
+}
+.reserve-btn2 {
+    padding: 15px 30px;
+    font-size: 1.2em;
+    border: 2px solid #000;
+    border-radius: 0px;
+    transition: background-color 0.3s;
+    margin-left: 20px; /* Ajoute de l'espace à gauche du bouton */
+    margin-right: 50px;
+    text-decoration: none;
+    color: #000;
+    position: relative; /* Définit la position relative sans sortir de l'écoulement normal du document */
+    top: 80px;
+}
+
+.reserve-btn2:hover {
+    background-color: #79160a;
+    color: #fff;
+}
+
+.reserve-btn:hover {
+    background-color: black;
+    color: #fff;
+}
+
+.content {
+    display: flex;
+    flex-direction: column; /* Organise les éléments en colonne */
+    justify-content: center;
+    align-items: center;
+    padding-top: 180px;
+    height: 78vh;
+    background-image: url('viande.jpeg');
+    background-size: cover;
+    background-position: top;
+    position: relative;
+}
+
+.background-logo {
+    max-width: 450px;
+    height: auto;
+    margin-top: -115px;
+    /* La marge n'est plus nécessaire grâce à l'organisation en colonne */
+    animation: slideDown 1.2s ease-out;
+}
+
+@keyframes slideDown {
+    from {
+        transform: translateY(-100px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.restaurant-info {
+    color: #fff;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.1em;
+    margin-top: 80px; /* Ajustez cette valeur au lieu de 200px pour un meilleur contrôle */
+    text-shadow: 1px 1px 4px rgba(0,0,0,0.7);
+    animation: slideDown 1.2s ease-out; /* Ajoutez l'animation à l'inscription */
+}
+
+.restaurant-info a {
+    text-decoration: none;
+    color: #fff;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.1em;
+    margin-top: 80px; /* Ajustez cette valeur au lieu de 200px pour un meilleur contrôle */
+    text-shadow: 1px 1px 4px rgba(0,0,0,0.7);
+    animation: slideDown 1.2s ease-out; /* Ajoutez l'animation à l'inscription */
+
+}
+.restaurant-info a:hover{
+    color:#b9230f;
+}
+.welcome-section {
+    text-align: center;
+    padding: 90px 0;
+    width: 100%; /* Assurez-vous qu'il prend toute la largeur */
+    background-color: #f3f4f4; /* Définit explicitement un fond blanc */
+    margin: 0 auto; /* Centrage de la section si nécessaire */
+    box-sizing: border-box; 
+    padding-top: -20px; /* Réduit l'espace au-dessus du titre */
+    padding-bottom: 120px;
+}
+.welcome-section h2 {
+    font-family: "Dancing Script", cursive;
+    margin-top: -3%; /* Déplace le titre vers le haut de 30% */
+    font-size: 450%;
+
+}
+
+.division-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+.left-side, .right-side {
+    width: 50%;
+}
+
+.left-side img {
+    width: 100%; /* Assure que l'image remplit l'espace disponible */
+    height: auto; /* Maintient le ratio d'aspect */
+     /* Ajoutez l'animation à l'image */
+
+}
+
+
+
+.right-side {
+    position: relative;
+    top: -20px; /* Ajustez cette valeur pour remonter la section */
+    text-align: center;
+    margin-top: -100px;
+ /* Déplace le contenu vers le haut. Ajustez selon les besoins. */
+}
+
+
+.right-side h3 {
+    margin-bottom: 10px;
+}
+
+.right-side p {
+    margin-bottom: 20px;
+}
+
+hr {
+    width: 10%; /* Ajustez la largeur selon vos besoins */
+    border: none;
+    height: 1px;
+    background-color: #000; /* Couleur de la ligne horizontale */
+    margin: 20px auto; /* Centrer le trait horizontalement avec un espace au-dessus et en dessous */
+    width: 20%; /* Ajustez selon la largeur désirée */
+    margin: auto; /* Centre horizontalement le trait */
+}
+
+.discover-btn {
+    padding: 10px 20px;
+    background-color: #000;
+    color: #fff;
+    text-decoration: none;
+    border: 2px solid #000;
+    border-radius: 0px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.discover-btn:hover {
+    background-color: transparent;
+    color: #000;
+    animation: reveal linear;
+    animation-timeline: scroll();
+    animation-range-start: cover 0%;
+    animation-range-end: contain 40%;
+}
+.button-container {
+    text-align: center; /* Centre le contenu de la div */
+    margin-top: 100px;
+    animation: reveal linear;
+    animation-timeline: scroll();
+    animation-range-start: cover 0%;
+    animation-range-end: contain 40%;
+
+}
+.concept{
+    font-family: "Montserrat", sans-serif;
+    text-shadow: 1px 1px 4px rgba(0,0,0,0.);
+    text-align: center;
+    margin-bottom: 50px;
+    margin-top: 50px;
+    animation: reveal linear;
+    animation-timeline: scroll();
+    animation-range-start: cover 0%;
+    animation-range-end: contain 40%;
+}
+.concept h3{
+    font-family: "Montserrat", sans-serif;
+
+}
+@keyframes reveal{
+    from{
+        transform: scale(0);
+        opacity: 0;
+    }
+    to{
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+.animate-on-scroll{
+    animation: reveal linear;
+    animation-timeline: scroll();
+    animation-range-start: cover 0%;
+    animation-range-end: contain 40%;
+}
+.infos-section {
+    background-color: #fff;
+    padding: 5vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.infos-container {
+    display: flex;
+    justify-content: space-around; /* Assure un espacement équilibré */
+    align-items: flex-start;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 1200px; /* Limite la largeur pour les grands écrans */
+    width: 100%;
+}
+
+.practical-info, .hours-info {
+    background-color: #f3f4f4;
+    padding: 2vw;
+    box-sizing: border-box;
+    border: 2px solid #79160a;
+    margin: 10px;
+    flex: 1; /* Donne aux deux éléments la possibilité de grandir équitablement */
+    min-width: 300px; 
+}
+
+.practical-info h2, .hours-info h2 {
+    color: #79160a;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.info-block h3 {
+    color: black;
+    margin-top: 10px;
+}
+.hours-content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.hours-content p, .info-block p {
+    font-size: 1rem; /* Ajustez selon la taille désirée */
+}
+
+.hours-content span {
+    font-weight: bold;
+}
+
+/* Responsive Design Adjustments */
+@media (max-width: 768px) {
+    .infos-container {
+        flex-direction: column;
+    }
+
+    .practical-info, .hours-info {
+        width: 80vw; /* Adjust the width on smaller screens */
+    }
+}
+footer {
+    background-color: #f3f4f4; /* Même couleur que l'en-tête */
+    color: #fff;
+    text-decoration: none;
+    text-shadow: 100px 100px 100px rgba(0,0,0,0.7);
+    font-family: 'Montserrat', sans-serif; /* Même police que le reste du site */
+    padding: 20px 0;
+    text-align: center;
+}
+.footer-section img[alt="Instagram"] {
+    width: 35px; /* ou la taille souhaitée */
+}
+
+
+.footer-content {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-section h3 {
+    margin-bottom: 15px;
+    color:#79160a;
+}
+
+.footer-section p,
+.footer-section a {
+    color: black;
+    text-decoration: none;
+    margin-bottom: 10px;
+    display: block; /* Assure que les éléments sont empilés verticalement */
+    text-shadow: 1px 100px 100px rgba(0,0,0,0.2);
+}
+
+.footer-section a:hover {
+    text-decoration: underline;
+}
+
+/* Pour les logos des réseaux sociaux */
+.footer-section img {
+    width: 24px; /* Ajustez selon la taille souhaitée */
+    margin-right: 10px;
+}
+.close-btn {
+    font-size: 45px; /* Taille de la croix */
+    cursor: pointer;
+    color: #000; /* Couleur de la croix */
+    position: absolute;
+    right: 20px;
+    top: -3px;
+    z-index: 101;
+}
+
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .footer-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-section {
+        margin-bottom: 20px;
+    }
+
+    .footer-section img {
+        margin: 0 auto; /* Centre les images sur petits écrans */
+        display: block;
+    }
+}
+/* Style pour les liens, incluant le numéro de téléphone et les informations légales */
+.footer-section a {
+    color: black; /* Couleur initiale des liens */
+    text-decoration: none; /* Enlève le soulignement par défaut */
+    transition: color 0.3s ease; /* Transition douce pour le changement de couleur */
+}
+
+/* Style au survol */
+.footer-section a:hover {
+    color: #79160a; /* Change la couleur en noir */
+    text-decoration: none; /* Assure que le soulignement est bien enlevé */
+}
+.contact-banner {
+    background-image: url('jw.webp'); /* Remplacez 'chemin/vers/' par le véritable chemin d'accès si l'image se trouve dans un dossier différent */
+    background-size: cover;
+    background-position: center;
+    height: 30vh; /* Ou toute autre hauteur selon vos besoins */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white; /* Pour que le titre 'NOUS CONTACTER' soit en blanc */
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.5); /* Pour améliorer la lisibilité du texte sur l'image */
+    width: 100%;
+}
+.contact-banner-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url('jw.webp');
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 50vh; /* ou toute autre valeur souhaitée */
+}
+.contact-banner h1{
+    font-size: 200%;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.5); /* Pour améliorer la lisibilité du texte sur l'image */
+    font-family: 'Montserrat', sans-serif;
+}
+.main-content {
+    display: flex;
+    flex-direction: column; /* Organise les éléments en colonne */
+    justify-content: center;
+    align-items: center;
+    padding-top: 100px; /* Espacement du haut, ajustez selon le header */
+    margin: 0 auto; /* Centre le contenu */
+}
+
+.contact-info-map-container {
+    display: flex;
+    width: calc(100% - 40px); /* Soustrait 20px de marge de chaque côté */
+    max-width: 1200px; /* Maximum width */
+    height: 400px;
+    margin: 5px; /* Marge extérieure pour le rectangle */
+    border: 1px solid #79160a; /* Bordure du rectangle */
+    position: relative; /* Pour la ligne verticale */
+    box-sizing: border-box;
+    background-color: #f3f4f4;
+}
+
+.contact-info, .map-container {
+    flex: 1; /* Chaque conteneur prend la moitié de l'espace */
+    padding: 20px; /* Espacement intérieur */
+}
+.contact-info h2{
+    font-size: 200%;
+    color: #79160a;
+    margin-top: 29px;
+}
+
+
+iframe {
+    width: 100%; /* Largeur complète du conteneur */
+    height: 100%; /* Hauteur définie pour s'adapter au conteneur */
+    border: none; /* Pas de bordure pour l'iframe */
+}
+.address-link{
+    text-decoration: none;
+    color: black;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.1em;
+    margin-top: 80px; /* Ajustez cette valeur au lieu de 200px pour un meilleur contrôle */
+}
+.address-link:hover{
+    color: #79160a;
+}
+.contact-form-section {
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #fff; /* ou toute autre couleur de fond */
+    border: 1px solid #ccc; /* bordure légère */
+    border-radius: 5px; /* coins arrondis */
+}
+
+.form-field {
+    margin-bottom: 10px;
+}
+
+.form-field label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.form-field input[type="text"],
+.form-field input[type="email"],
+.form-field input[type="tel"],
+.form-field textarea {
+    width: 100%; /* prend toute la largeur disponible */
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.form-submit-btn {
+    background-color: #79160a; /* couleur de fond du bouton */
+    color: white; /* couleur du texte */
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer; /* change le curseur en main pour indiquer que c'est cliquable */
+    font-size: 1em;
+}
+
+.form-submit-btn:hover {
+    background-color: #b9230f; /* couleur au survol */
+}
+
+.menu-hamburger {
+    display: none; /* Cache l'icône du menu hamburger par défaut */
+    cursor: pointer;
+    font-size: 30px; /* Taille de l'icône du menu */
+    color: #fff; /* Couleur de l'icône */
+    margin-right: 20px;
+    margin-top: 2px;
+    cursor: pointer;
+    font-size: 30px;
+    color: #fff;
+    position: absolute;
+    right: 20px;
+    top: 15px;
+    z-index: 100; 
+}
+.close-btn{
+    display: block;
+}
+
+@media (max-width: 768px) {
+    .background-logo{
+        max-width: 350px;
+    }
+    .logo img {
+        height: 110px;
+        transition: transform 0.3s;
+        margin-top: 6px;
+    }
+    header {
+        padding: 10px; /* Réduit le padding pour diminuer la hauteur */
+        width: 100%;
+        height: 11%;
+
+    }
+    .logo img {
+        height: 80px;
+        transition: transform 0.3s;
+    }
+    
+    .logo img:hover {
+        transform: scale(1.2);
+    }
+
+    .reserve-btn {
+        padding: 7.5px 15px; /* Ajustez la taille du bouton pour mobile */
+        font-size: 14px; /* Taille de la police pour mobile */
+        margin-right: -10px;
+        margin-top: -1.6px;
+    }
+
+    .menu-hamburger {
+        display: block; /* S'assure que le bouton hamburger est visible */
+        cursor: pointer;
+        font-size: 45px; /* Ajuste la taille de l'icône */
+        color: #fff;
+        position: fixed;
+        right: 20px;
+        top: 16px;
+        z-index: 105;
+        margin-right: -5px;
+    }
+
+    nav ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 20px 10px; /* Espace autour des liens */
+        background-color: #f3f4f4;
+        position: fixed;
+        top: 0;
+        right: -100%; /* Commence caché */
+        height: 100%;
+        width: 89%; /* 3/4 de la largeur de l'écran */
+        overflow-y: auto; /* Permet le scroll si le contenu dépasse */
+        transition: right 0.5s ease; /* Anime le mouvement du menu */
+        z-index: 106; /* Assurez-vous qu'il est en dessous du bouton hamburger */
+    }
+    nav ul.show {
+        max-height: 15em; /* Ajustez selon le contenu. Assurez-vous qu'il y a assez d'espace pour tout afficher */
+    }
+
+    nav ul li {
+        display: block; /* Affiche les éléments du menu verticalement */
+        margin: 0; /* Ajustez selon le besoin */
+        padding: 10px 0; /* Ajustez pour le padding vertical des liens pour un meilleur rendu */
+        border-bottom: 1px solid #ccc; 
+    }
+    nav ul li:last-child {
+        border-bottom: none; /* Pour ne pas avoir de bordure sur le dernier élément */
+    }
+    nav ul li a {
+        padding: 10px 15px;
+        text-decoration: none;
+        color: black;
+        text-shadow: 1px 1px 4px rgba(0,0,0,0.1);
+
+        display: block;
+        text-align: left;
+    }
+    nav ul:not(#mobileMenu) {
+        display: none;
+    }
+    .close-btn {
+        display: block;
+        font-size: 45px; /* Taille de la croix */
+        cursor: pointer;
+        color: #000; /* Couleur de la croix */
+        position: absolute;
+        right: 20px;
+        top: -3px;
+        z-index: 101; /* Assurez-vous qu'elle est au-dessus des autres éléments du menu */
+    }
+    
+    .contact-banner {
+        background-image: url('jw.webp'); /* Remplacez 'chemin/vers/' par le véritable chemin d'accès si l'image se trouve dans un dossier différent */
+        background-size: cover;
+        background-position: center;
+        height: 30vh; /* Ou toute autre hauteur selon vos besoins */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white; /* Pour que le titre 'NOUS CONTACTER' soit en blanc */
+        text-shadow: 2px 2px 4px rgba(0,0,0,0.5); /* Pour améliorer la lisibilité du texte sur l'image */
+        width: 100%;
+    }
+    .contact-banner-container {
+        height: 500vh; /* Ajuste cette valeur pour augmenter la hauteur spécifiquement sur les appareils mobiles */
+    }
+    .left-side img {
+        display: none;
+    }
+
+    .right-side, .division-container, .welcome-section {
+        width: 90%;
+        text-align: center;
+    }
+
+    .division-container {
+        flex-direction: column;
+    }
+
+    .vertical-line {
+        display: none;
+    }
+
+    .button-container {
+        margin-top: 20px;
+    }
+    .welcome-section{
+        margin-top: 30px;
+    }
+    .welcome-section h2{
+        margin-top: -20%;
+    }
+    .discover-btn:hover {
+        background-color: transparent;
+        color: #000;
+        animation: reveal linear;
+        animation-timeline: scroll();
+        animation-range-start: cover 0%;
+        animation-range-end: contain 20%;
+    }
+    .button-container {
+        text-align: center; /* Centre le contenu de la div */
+        margin-top: 100px;
+        animation: reveal linear;
+        animation-timeline: scroll();
+        animation-range-start: cover 0%;
+        animation-range-end: contain 20%;
+    
+    }
+    .concept{
+        font-family: "Montserrat", sans-serif;
+        text-shadow: 1px 1px 4px rgba(0,0,0,0.);
+        text-align: center;
+        margin-bottom: 50px;
+        margin-top: 70px;
+        animation: reveal linear;
+        animation-timeline: scroll();
+        animation-range-start: cover 0%;
+        animation-range-end: contain 20%;
+    }
+    .concept h3{
+        font-family: "Montserrat", sans-serif;
+    
+    }
+    @keyframes reveal{
+        from{
+            transform: scale(0);
+            opacity: 0;
+        }
+        to{
+            transform: scale(1);
+            opacity: 1;
+        }
+    }
+    
+    .animate-on-scroll{
+        animation: reveal linear;
+        animation-timeline: scroll();
+        animation-range-start: cover 0%;
+        animation-range-end: contain 20%;
+    }
+    .contact-info-map-container {
+        flex-direction: column;
+    }
+
+    .vertical-line {
+        display: none; /* Plus nécessaire en mode vertical */
+    }
+
+    .contact-info, .map-container {
+        width: 90%; /* Pour que les conteneurs prennent toute la largeur */
+        /* Ajustez le padding si nécessaire */
+    }
+
+    .map-container iframe {
+        width: 100%; /* Ajustez la largeur de l'iframe pour qu'elle s'adapte à la largeur du conteneur */
+        height: 400px; /* Vous pouvez ajuster la hauteur selon vos besoins */
+        margin-top: 100px;
+    }
+    .contact-page .infos-section{
+        margin-top: 470px;
+    }
+   .contact-info .reserve-btn2 {
+        padding: 15px 30px;
+        font-size: 1.2em;
+        border: 2px solid #000;
+        border-radius: 0px;
+        transition: background-color 0.3s;
+        margin-left: 20px; /* Ajoute de l'espace à gauche du bouton */
+        margin-right: 50px;
+        text-decoration: none;
+        color: #000;
+        position: relative; /* Définit la position relative sans sortir de l'écoulement normal du document */
+        top: 50px;
+    }
+
+}
