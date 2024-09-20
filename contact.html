@@ -11,7 +11,7 @@
 <body class="contact-page">
     <header>
         <div class="logo">
-            <a href="index.html"> <!-- Remplacez "page-accueil.html" par l'URL de votre page d'accueil -->
+            <a href="index.html">
                 <img src="logoVV.png" alt="Logo">
             </a>
         </div>
@@ -30,7 +30,7 @@
     </header>
     <div class="main-content">
 
-    <!-- Section Contact avec Arrière-plan -->
+    
 <section class="contact-banner">
     <h1>NOUS CONTACTER</h1>
 </section>
@@ -84,8 +84,8 @@
                     <p><span>Mercredi :  </span> 12h - 15h & 18h30 - 22h30</p>
                     <p><span>Jeudi :    </span> 12h - 15h & 18h30 - 22h30</p>
                     <p><span>Vendredi : </span> 12h - 15h & 18h30 - 23h00</p>
-                    <p><span>Samedi :   </span> 12h - 23h</p>
-                    <p><span>Dimanche : </span> 12h - 23h</p>
+                    <p><span>Samedi :   </span> 12h - 23h30</p>
+                    <p><span>Dimanche : </span> Fermé </p>
             </div>
         </div>
     </div>
@@ -93,10 +93,10 @@
 
 
 
-<!-- Le reste de votre contenu ici -->
 
 
-    <!-- Contenu spécifique à la page de contact ici -->
+
+    
     </div>
     <footer>
         <div class="footer-content">
@@ -128,9 +128,9 @@
             var hamburger = document.querySelector(".menu-hamburger");
         
             if (menu.style.right == "-100%") {
-                menu.style.right = "0"; // Fait apparaître le menu
+                menu.style.right = "0"; 
             } else {
-                menu.style.right = "-100%"; // Cache le menu
+                menu.style.right = "-100%"; 
             }
         }
         /*
@@ -151,7 +151,7 @@
             var menu = document.getElementById("mobileMenu");
             var menuButton = document.querySelector(".menu-hamburger");
             
-            // Si le clic est en dehors du menu et pas sur le bouton du menu, fermer le menu
+        
             if (menu.style.right == "0" && !menu.contains(event.target) && !menuButton.contains(event.target)) {
                 menu.style.right = "-100%";
             }
