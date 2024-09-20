@@ -102,8 +102,8 @@
                     <p><span>Mercredi :  </span> 12h - 15h & 18h30 - 22h30</p>
                     <p><span>Jeudi :    </span> 12h - 15h & 18h30 - 22h30</p>
                     <p><span>Vendredi : </span> 12h - 15h & 18h30 - 23h00</p>
-                    <p><span>Samedi :   </span> 12h - 23h</p>
-                    <p><span>Dimanche : </span> 12h - 23h</p>
+                    <p><span>Samedi :   </span> 12h - 23h30</p>
+                    <p><span>Dimanche : </span> Fermé </p>
                 </div>
             </div>
         </div>
@@ -152,11 +152,11 @@ function toggleMenu() {
     var hamburger = document.querySelector(".menu-hamburger");
 
     if (menu.style.right === "0%") {
-        menu.style.right = "-100%"; // Ferme le menu
-        hamburger.style.display = "block"; // Montre le hamburger
+        menu.style.right = "-100%"; 
+        hamburger.style.display = "block";
     } else {
         menu.style.right = "0"; // Ouvre le menu
-        hamburger.style.display = "none"; // Cache le hamburger
+        hamburger.style.display = "none"; 
     }
 }
 */
@@ -164,7 +164,7 @@ window.addEventListener('click', function(event) {
     var menu = document.getElementById("mobileMenu");
     var menuButton = document.querySelector(".menu-hamburger");
     
-    // Si le clic est en dehors du menu et pas sur le bouton du menu, fermer le menu
+    
     if (menu.style.right == "0" && !menu.contains(event.target) && !menuButton.contains(event.target)) {
         menu.style.right = "-100%";
     }
